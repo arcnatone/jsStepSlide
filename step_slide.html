@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html lang="ko" xml:lang="ko">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="description" content="Step Slide">
+<title>Step Slide</title>
+
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
+<link rel="stylesheet" type="text/css" href="./css/reset.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="./css/js_step_slide_ui.css" media="all"/>
+
+<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="./js/js_step_slide_ui.js"></script>
+
+<script>
+$(function(){
+	$(".step-slide.slide01").jsStepSlide({showItem:3});
+	$(".step-slide.slide02").jsStepSlide({showItem:4, control:false});
+	$(".step-slide.slide03").jsStepSlide({showItem:4, button:false, auto:false});
+	$(".step-slide.slide04").jsStepSlide({showItem:3, margin:30, speed:300, time:4000});
+});
+</script>
+
+<style>
+body{min-width:1200px; background-color:#8dbcfd;}
+
+h1{padding:100px 0 50px; text-align:center; color:#fff; font-weight:bold; font-size:60px;}
+.option-text{padding-bottom:30px; color:#fff; font-size:20px; text-align:center; line-height:1.5em;}
+
+.step-slide{margin:0 auto;}
+.step-slide .slide-controller{left:24px;}
+.step-slide.slide01{width:900px;}
+.step-slide.slide02{width:1190px;}
+.step-slide.slide03{width:1190px;}
+.step-slide.slide04{width:920px;}
+
+.adopted-options{margin:5px 0 50px; padding:20px 24px; background-color:#fff; color:#222; font-size:15px;}
+</style>
+</head>
+
+<body>
+	<h1>jsStepSlide();</h1>
+
+	<p class="option-text">
+		Options : margin(px), showItem(int), speed(ms), time(ms), auto(boolean), control(boolean), button(boolean)
+	</p>
+	
+	<div class="step-slide slide01">
+		<div class="slide-wrap">
+			<ul class="slide-list">
+				<li class="slide-item">
+					<img src="./images/img_cat01.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_cat02.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_cat03.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_cat04.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_cat05.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_cat06.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_cat07.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_cat08.jpg" alt="">
+				</li>
+			</ul>
+		</div>
+		<p class="adopted-options">
+			{showItem:3}
+		</p>
+	</div>
+	
+	<div class="step-slide slide02">
+		<div class="slide-wrap">
+			<ul class="slide-list">
+				<li class="slide-item">
+					<img src="./images/img_dog01.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_dog02.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_dog03.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_dog04.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_dog05.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_dog06.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_dog07.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_dog08.jpg" alt="">
+				</li>
+			</ul>
+		</div>
+		<p class="adopted-options">
+			{showItem:4, control:false}
+		</p>
+	</div>
+
+	<div class="step-slide slide03">
+		<div class="slide-wrap">
+			<ul class="slide-list">
+				<li class="slide-item">
+					<img src="./images/img_cat01.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_cat02.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_cat03.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_cat04.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_cat05.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_cat06.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_cat07.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_cat08.jpg" alt="">
+				</li>
+			</ul>
+		</div>
+		<p class="adopted-options">
+			{showItem:4, button:false, auto:false}
+		</p>
+	</div>
+
+	<div class="step-slide slide04">
+		<div class="slide-wrap">
+			<ul class="slide-list">
+				<li class="slide-item">
+					<img src="./images/img_dog09.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_dog10.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_dog11.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_dog01.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_dog02.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_dog03.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_dog04.jpg" alt="">
+				</li>
+				<li class="slide-item">
+					<img src="./images/img_dog05.jpg" alt="">
+				</li>
+			</ul>
+		</div>
+		<p class="adopted-options">
+			{showItem:3, margin:30, speed:300, time:4000}
+		</p>
+	</div>
+</body>
+</html>
